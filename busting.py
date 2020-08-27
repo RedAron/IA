@@ -14,7 +14,7 @@ if __name__=="__main__":
     
     X_train,X_test,y_train,y_test=train_test_split(X,y, test_size=0.35,random_state=2)
 
-    bosst= GradientBoostingClassifier(n_estimators=10000).fit(X_train,y_train)
+    bosst= GradientBoostingClassifier(n_estimators=45).fit(X_train,y_train)
     boost_pred = bosst.predict(X_test)
 
     print("="*64)
